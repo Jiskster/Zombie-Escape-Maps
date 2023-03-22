@@ -295,3 +295,14 @@ Weather = 1
 NoZone = true
 SelectHeading = Zombie Escape
 Lua.SurviveTime = 10
+
+Level S3
+LevelName = Yellow Flower
+SubTitle = Zombie Escape
+Music = ACZ1
+SkyNum = 13
+TypeOfLevel = ZESCAPE
+NextLevel = 40
+LevelSelect = 1
+SelectHeading = Zombie Escape
+Lua.SurviveTime = 10
