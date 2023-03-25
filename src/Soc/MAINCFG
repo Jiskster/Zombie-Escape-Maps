@@ -259,18 +259,6 @@ Lua.SwarmMap = true
 Lua.SurviveTime = 5
 Lua.BounceOff = true
 
-Level S0
-Levelname = Nomad Frosts Beta
-Subtitle = Zombie Escape
-Act = 0
-Music = NFCAV
-TypeOfLevel = ZESCAPE
-NextLevel = 40
-SkyNum = 11
-NoZone = True
-SelectHeading = Zombie Escape
-Lua.SurviveTime = 10
-
 Level S1
 Levelname = Greenflower Escape
 Subtitle = Short Greenflower
@@ -306,3 +294,28 @@ NextLevel = 40
 LevelSelect = 1
 SelectHeading = Zombie Escape
 Lua.SurviveTime = 10
+
+Level N0
+Levelname = Ancient Catacombs
+Subtitle = ZE Map By Neonius|Next
+Act = 0
+Music = ZEAC
+TypeOfLevel = ZESCAPE
+NextLevel = 41
+SkyNum = 1
+NoZone = True
+SelectHeading = Zombie Escape
+Lua.SurviveTime = 10
+
+Level Z2
+Levelname = Egg Rock
+Act = 0
+Music = ERZ1
+TypeOfLevel = ZESCAPE
+NextLevel = 40
+SkyNum = 22
+LevelSelect = 1
+NoZone = True
+SelectHeading = Zombie Escape
+SubTitle = Zombie Escape
+Lua.SurviveTime = 12
