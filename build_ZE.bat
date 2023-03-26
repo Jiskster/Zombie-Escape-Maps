@@ -1,7 +1,7 @@
 @ECHO OFF
 
 ::--------------------------------------------------------------------------
-set "name=ZGL_MZombieEscape_Maps"
+set "name=ZML_MZombieEscape_Maps"
 set "version=2.0.2"
 
 set /A "delump=0"
