@@ -164,7 +164,6 @@ TypeOfLevel = ZESCAPE
 NextLevel = R2
 NoZone = True
 SelectHeading = Zombie Escape
-Lua.SurviveTime = 10
 Lua.BounceOff = true
 
 Level R2
@@ -177,7 +176,6 @@ TypeOfLevel = ZESCAPE
 NextLevel = R3
 NoZone = True
 SelectHeading = Zombie Escape
-Lua.SurviveTime = 10
 
 Level R3
 Levelname = Ice Mountain
@@ -190,7 +188,6 @@ TypeOfLevel = ZESCAPE
 NextLevel = R0
 NoZone = True
 SelectHeading = Zombie Escape
-Lua.SurviveTime = 10
 
 Level YW
 LevelName = Uglywood
@@ -269,7 +266,7 @@ NextLevel = 40
 SkyNum = 1
 NoZone = true
 SelectHeading = Zombie Escape
-Lua.SurviveTime = 10
+Lua.SurviveTime = 3
 
 Level S2
 LevelName = City Escape
@@ -282,7 +279,6 @@ SkyNum = 11
 Weather = 1
 NoZone = true
 SelectHeading = Zombie Escape
-Lua.SurviveTime = 10
 
 Level S3
 LevelName = Yellow Flower
@@ -293,7 +289,6 @@ TypeOfLevel = ZESCAPE
 NextLevel = 40
 LevelSelect = 1
 SelectHeading = Zombie Escape
-Lua.SurviveTime = 10
 
 Level N0
 Levelname = Ancient Catacombs
@@ -305,7 +300,6 @@ NextLevel = 41
 SkyNum = 1
 NoZone = True
 SelectHeading = Zombie Escape
-Lua.SurviveTime = 10
 
 Level Z2
 Levelname = Egg Rock
