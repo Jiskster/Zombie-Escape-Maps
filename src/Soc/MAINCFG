@@ -189,17 +189,6 @@ NextLevel = R0
 NoZone = True
 SelectHeading = Zombie Escape
 
-Level YW
-LevelName = Uglywood
-Act = 0
-Subtitle = Low Effort Stonewood
-Music = MP_DOM
-Weather = PRECIP_RAIN
-TypeOfLevel = ZESCAPE
-SelectHeading = Zombie Escape
-Lua.SwarmMap = true
-Lua.SurviveTime = 3
-
 Level 70
 Levelname = Old River XMAS
 Subtitle = Zombie Swarm Maps
@@ -256,19 +245,7 @@ Lua.SwarmMap = true
 Lua.SurviveTime = 5
 Lua.BounceOff = true
 
-Level S1
-Levelname = Greenflower Escape
-Subtitle = Short Greenflower
-Act = 0
-Music = GFZ1
-TypeOfLevel = ZESCAPE
-NextLevel = 40
-SkyNum = 1
-NoZone = true
-SelectHeading = Zombie Escape
-Lua.SurviveTime = 3
-
-Level S2
+Level S0
 LevelName = City Escape
 SubTitle = Where everything started...
 Act = 0
@@ -278,16 +255,6 @@ NextLevel = 40
 SkyNum = 11
 Weather = 1
 NoZone = true
-SelectHeading = Zombie Escape
-
-Level S3
-LevelName = Yellow Flower
-SubTitle = Zombie Escape
-Music = ACZ1
-SkyNum = 13
-TypeOfLevel = ZESCAPE
-NextLevel = 40
-LevelSelect = 1
 SelectHeading = Zombie Escape
 
 Level N0
@@ -327,43 +294,6 @@ Lua.SwarmMap = true
 Lua.SurviveTime = 4
 
 Level E1
-LevelName = Noxious Factory
-Music = THZ1
-TypeOfLevel = ZESCAPE
-SelectHeading = Lazy Match Ports
-NextLevel = E2
-SkyNum = 4
-SubTitle = Zombie Swarm
-LevelSelect = 1
-Lua.SwarmMap = true
-Lua.SurviveTime = 4
-
-LEVEL E2
-LevelName = Tidal Palace
-Music = DSZ2
-TypeOfLevel = ZESCAPE
-SelectHeading = Lazy Match Ports
-NextLevel = E3
-SkyNum = 7
-SubTitle = Zombie Swarm
-LevelSelect = 1
-Lua.SwarmMap = true
-Lua.SurviveTime = 4
-
-Level E3
-LevelName = Thunder Citadel
-Music = CEZ2
-TypeOfLevel = ZESCAPE
-SelectHeading = Lazy Match Ports
-NextLevel = E4
-Weather = 1
-SkyNum = 10
-SubTitle = Zombie Swarm
-LevelSelect = 1
-Lua.SwarmMap = true
-Lua.SurviveTime = 4
-
-Level E4
 LevelName = Desolate Twilight
 Music = MP_DES
 TypeOfLevel = ZESCAPE
@@ -375,81 +305,7 @@ LevelSelect = 1
 Lua.SwarmMap = true
 Lua.SurviveTime = 4
 
-Level E5
-LevelName = Infernal Cavern
-Music = RVZ2
-TypeOfLevel = ZESCAPE
-SelectHeading = Lazy Match Ports
-NextLevel = E6
-SkyNum = 7
-SubTitle = Zombie Swarm
-LevelSelect = 1
-Lua.SwarmMap = true
-Lua.SurviveTime = 4
-
-Level E6
-LevelName = Orbital Hangar
-Music = MP_DOM
-TypeOfLevel = ZESCAPE
-SelectHeading = Lazy Match Ports
-NextLevel = E7
-SkyNum = 22
-SubTitle = Zombie Swarm
-LevelSelect = 1
-Lua.SwarmMap = true
-Lua.SurviveTime = 4
-
-Level E7
-LevelName = Sapphire Falls
-Music = MP_GHZ
-TypeOfLevel = ZESCAPE
-SelectHeading = Lazy Match Ports
-NextLevel = E8
-SkyNum = 2
-SubTitle = Zombie Swarm
-LevelSelect = 1
-Lua.SwarmMap = true
-Lua.SurviveTime = 4
-
-Level E8
-LevelName = Diamond Blizzard
-Music = MP_AIR
-TypeOfLevel = ZESCAPE
-SelectHeading = Lazy Match Ports
-NextLevel = E9
-Weather = 2
-SkyNum = 55
-SubTitle = Zombie Swarm
-LevelSelect = 1
-Lua.SwarmMap = true
-Lua.SurviveTime = 4
-
-Level E9
-LevelName = Celestial Sanctuary
-Music = AGZ
-TypeOfLevel = ZESCAPE
-SelectHeading = Lazy Match Ports
-NextLevel = EA
-SkyNum = 40
-SubTitle = Zombie Swarm
-LevelSelect = 1
-Lua.SwarmMap = true
-Lua.SurviveTime = 4
-
-Level EA
-LevelName = Frost Columns
-Music = MP_ICE
-TypeOfLevel = ZESCAPE
-SelectHeading = Lazy Match Ports
-NextLevel = EB
-Weather = 2
-SkyNum = 6
-SubTitle = Zombie Swarm
-LevelSelect = 1
-Lua.SwarmMap = true
-Lua.SurviveTime = 4
-
-Level EB
+Level E2
 LevelName = Meadow Match
 Music = MP_MED
 TypeOfLevel = ZESCAPE
