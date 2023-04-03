@@ -8,6 +8,9 @@ local map47_timer1 = false
 local map47_timer2 = false
 local map47_timer3 = false
 local map47_timer4 = false
+
+local map47_countup = 0
+local map47_countup_toggle = false
 local patches = {"MCPLANK", "MCOBS", "MCDOOR", "MCSTONE"}
 /*
 	Wood Plank
@@ -25,6 +28,8 @@ ZE.map47netvars = function(net)
 	map47_timer2 = net($)
 	map47_timer3 = net($)
 	map47_timer4 = net($)
+	map47_countup = net($)
+	map47_countup_toggle = net($)
 end
 
 addHook("MapChange", do
@@ -36,6 +41,8 @@ addHook("MapChange", do
         map47_timer2 = false	
 		map47_timer3 = false
 		map47_timer4 = false
+		map47_countup = 0
+		map47_countup_toggle = false
 end)
 
 local function Map47_Part1()
@@ -46,9 +53,9 @@ local function Map47_Part1()
 end
 
 hud.add(function(v,p,c)
-	local time = TICRATE*27
-	if map47_timer1 ~= false 
-		local ese = ease.inoutquad(( (FU) / (time) )*(map47_timer1), 300, 350)
+	local time = TICRATE*3
+	if map47_timer1 ~= false and map47_countup
+		local ese = ease.inoutquad(( (FU) / (time) )*(map47_countup), 350, 300)
 		if (map47_timer1>time) then
 			v.draw(ese,100,v.cachePatch(patches[1]), V_PERPLAYER|V_SNAPTORIGHT)
 		elseif (map47_timer1<time)
@@ -63,13 +70,14 @@ local function Map47_Part2()
 	  S_StartSound(player, sfx_radio)
 	  map47_act2 = 1
 	  map47_timer2 = 60*TICRATE
+	  map47_countup_toggle = true
 end
 
 local function Map47_Part3()
       chatprint("Iron Door will open in\x82 20 \x80seconds")
 	  S_StartSound(player, sfx_radio)
 	  map47_act3 = 1
-	  map47_timer3 = 20*TICRATE
+	  map47_countup_toggle = true
 end
 
 local function Map47_Part4()
@@ -78,6 +86,7 @@ local function Map47_Part4()
 	  S_StartSound(player, sfx_radio)
 	  map47_act4 = 1
 	  map47_timer4 = 60*TICRATE
+	  map47_countup_toggle = true
 end
 
 local function Map45_Part2Tele1()
@@ -109,7 +118,7 @@ end
 addHook("ThinkFrame", do
 		if map47_act1 == 1
 		   map47_timer1 = $-1
-	end
+		end
 	  if map47_timer1 == 15*TICRATE then
 	     chatprint("\x8D\Wooden Platform \x80will leave in\x82 15 \x80seconds")
 		 S_StartSound(player, sfx_radio)
@@ -121,6 +130,8 @@ addHook("ThinkFrame", do
 		  P_LinedefExecute(46)
 		  P_LinedefExecute(48)
 		  P_LinedefExecute(51)
+		  map47_countup_toggle = false
+		  map47_countup = 0
 	end
 end)
 
@@ -138,6 +149,8 @@ addHook("ThinkFrame", do
        if map47_timer2 == 0 and gamemap == 47 then
 		  P_LinedefExecute(56)
 		  map47_act2 = 0
+		  map47_countup_toggle = false
+		  map47_countup = 0
 	end
 	 if map47_timer2 == 1*TICRATE and gamemap == 47 then
 	    Map45_Part2Tele1()
@@ -145,23 +158,28 @@ addHook("ThinkFrame", do
 end)
 
 addHook("ThinkFrame", do
-		if map47_act3 == 1
-		   map47_timer3 = $-1
+	if map47_countup_toggle == true
+		map47_countup = $+1
 	end
-	  if map47_timer3 == 10*TICRATE then
-	     chatprint("Iron Door will open in\x82 10 \x80seconds")
-		 S_StartSound(player, sfx_radio)
-		elseif map47_timer3 == 5*TICRATE then
-		 chatprint("Iron Door will open in\x83 5 \x80seconds")
-		 S_StartSound(player, sfx_radio)
-	    end
-       if map47_timer3 == 0 and gamemap == 47 then
-		  P_LinedefExecute(61)
-		  map47_act3 = 0
+	if map47_act3 == 1
+	   map47_timer3 = $-1
 	end
-	 if map47_timer3 == 1*TICRATE and gamemap == 47 then
-	    Map45_Part3Tele1()
-    end
+	if map47_timer3 == 10*TICRATE then
+		chatprint("Iron Door will open in\x82 10 \x80seconds")
+		S_StartSound(player, sfx_radio)
+	elseif map47_timer3 == 5*TICRATE then
+		chatprint("Iron Door will open in\x83 5 \x80seconds")
+		S_StartSound(player, sfx_radio)
+	end
+	if map47_timer3 == 0 and gamemap == 47 then
+		P_LinedefExecute(61)
+		map47_act3 = 0
+		map47_countup_toggle = false
+		map47_countup = 0
+	end
+	if map47_timer3 == 1*TICRATE and gamemap == 47 then
+		Map45_Part3Tele1()
+	end
 end)
 
 addHook("ThinkFrame", do
@@ -178,6 +196,8 @@ addHook("ThinkFrame", do
        if map47_timer4 == 0 and gamemap == 47 then
 		  P_LinedefExecute(63)
 		  map47_act4 = 0
+		  map47_countup_toggle = false
+		  map47_countup = 0
 	end
 end)
 
