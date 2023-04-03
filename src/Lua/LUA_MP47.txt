@@ -8,6 +8,13 @@ local map47_timer1 = false
 local map47_timer2 = false
 local map47_timer3 = false
 local map47_timer4 = false
+local patches = {"MCPLANK", "MCOBS", "MCDOOR", "MCSTONE"}
+/*
+	Wood Plank
+	Obsidian Block
+	Iron Door
+	Stone Block
+*/
 
 ZE.map47netvars = function(net)
 	map47_act1 = net($)
@@ -37,6 +44,18 @@ local function Map47_Part1()
 	  map47_act1 = 1
 	  map47_timer1 = 30*TICRATE
 end
+
+hud.add(function(v,p,c)
+	local time = TICRATE*27
+	if map47_timer1 ~= false 
+		local ese = ease.inoutquad(( (FU) / (time) )*(map47_timer1), 300, 350)
+		if (map47_timer1>time) then
+			v.draw(ese,100,v.cachePatch(patches[1]), V_PERPLAYER|V_SNAPTORIGHT)
+		elseif (map47_timer1<time)
+			v.draw(300,100,v.cachePatch(patches[1]), V_PERPLAYER|V_SNAPTORIGHT)
+		end
+	end
+end,"game")
 
 local function Map47_Part2()
       chatprint("\x8F\Obsidian Wall \x80will break in\x85 60 \x80seconds")
@@ -76,6 +95,8 @@ local function Map45_Part3Tele1()
        end
 	end
 end
+
+
 
 local function Map45_Part4Tele1()
       for player in players.iterate
