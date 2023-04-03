@@ -50,16 +50,23 @@ local function Map47_Part1()
 	  S_StartSound(player, sfx_radio)
 	  map47_act1 = 1
 	  map47_timer1 = 30*TICRATE
+	  map47_countup_toggle = true
 end
 
 hud.add(function(v,p,c)
-	local time = TICRATE*3
-	if map47_timer1 ~= false and map47_countup
-		local ese = ease.inoutquad(( (FU) / (time) )*(map47_countup), 350, 300)
+	local time = TICRATE*1
+	if map47_countup then
+		print(map47_countup)
+	end
+	if map47_timer1 ~= false and map47_countup_toggle == true then
+		local ese = ease.inoutquad(( (FU) / (time) )*(map47_countup), 350, 292)
+		local ese2 = ease.inoutquad(( (FU) / (time) )*(map47_countup), 350, 300)
 		if (map47_timer1>time) then
 			v.draw(ese,100,v.cachePatch(patches[1]), V_PERPLAYER|V_SNAPTORIGHT)
+			v.drawString(ese2,115,map47_timer1/TICRATE, V_PERPLAYER|V_SNAPTORIGHT, "center")
 		elseif (map47_timer1<time)
-			v.draw(300,100,v.cachePatch(patches[1]), V_PERPLAYER|V_SNAPTORIGHT)
+			v.draw(292,100,v.cachePatch(patches[1]), V_PERPLAYER|V_SNAPTORIGHT)
+			v.drawString(300,115,map47_timer1/TICRATE, V_PERPLAYER|V_SNAPTORIGHT, "center")
 		end
 	end
 end,"game")
