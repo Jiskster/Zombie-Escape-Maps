@@ -208,7 +208,7 @@ Level 71
 Levelname = Forest XMAS
 Subtitle = Zombie Swarm Maps
 Act = 0
-Music = MP_ICE
+Music = RINGRINK
 TypeOfLevel = ZESCAPE
 NextLevel = 70
 SkyNum = 17
