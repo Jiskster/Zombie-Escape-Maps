@@ -7,7 +7,7 @@ TypeOfLevel = ZESCAPE
 NextLevel = 41
 SkyNum = 15
 NoZone = True
-SelectHeading = Zombie Escape
+SelectHeading = Zombie Escape Maps
 
 Level 41
 Levelname = Stonewood
@@ -19,7 +19,7 @@ NextLevel = 43
 SkyNum = 11
 Weather = 1
 NoZone = True
-SelectHeading = Zombie Escape
+SelectHeading = Zombie Escape Maps
 
 Level 42
 Levelname = Secret Lab 1
@@ -30,7 +30,7 @@ TypeOfLevel = ZESCAPE
 NextLevel = 43
 SkyNum = 21
 NoZone = True
-SelectHeading = Zombie Escape
+SelectHeading = Zombie Escape Maps
 
 Level 43
 Levelname = Corrupted Void
@@ -41,7 +41,7 @@ TypeOfLevel = ZESCAPE
 NextLevel = 44
 SkyNum = 22
 NoZone = True
-SelectHeading = Zombie Escape
+SelectHeading = Zombie Escape Maps
 
 Level 44
 Levelname = Secret Lab 2
@@ -51,7 +51,7 @@ Music = ZE0
 TypeOfLevel = ZESCAPE
 NextLevel = 45
 NoZone = True
-SelectHeading = Zombie Escape
+SelectHeading = Zombie Escape Maps
 Skynum = 21
 
 Level 45
@@ -62,7 +62,7 @@ Music = SPEC8
 TypeOfLevel = ZESCAPE
 NextLevel = 47
 SkyNum = 1
-SelectHeading = Zombie Escape
+SelectHeading = Zombie Escape Maps
 
 Level 47
 Levelname = Minecraft v1
@@ -73,7 +73,7 @@ TypeOfLevel = ZESCAPE
 NextLevel = 48
 SkyNum = 14
 NoZone = True
-SelectHeading = Zombie Escape
+SelectHeading = Zombie Escape Maps
 
 Level 48
 Levelname = Undertale Pt 1
@@ -84,7 +84,7 @@ TypeOfLevel = ZESCAPE
 NextLevel = 40
 SkyNum = 10
 NoZone = True
-SelectHeading = Zombie Escape
+SelectHeading = Zombie Escape Maps
 
 Cutscene 1
 NumScenes 4
@@ -151,7 +151,7 @@ Music = SCP87B
 TypeOfLevel = ZESCAPE
 NextLevel = R1
 NoZone = True
-SelectHeading = Zombie Escape
+SelectHeading = Zombie Escape Maps
 Lua.SurviveTime = 10
 
 Level R1
@@ -163,7 +163,7 @@ Music = RBXO
 TypeOfLevel = ZESCAPE
 NextLevel = R2
 NoZone = True
-SelectHeading = Zombie Escape
+SelectHeading = Zombie Escape Maps
 Lua.BounceOff = true
 
 Level R2
@@ -175,7 +175,7 @@ Music = SCP87B
 TypeOfLevel = ZESCAPE
 NextLevel = R3
 NoZone = True
-SelectHeading = Zombie Escape
+SelectHeading = Zombie Escape Maps
 
 Level R3
 Levelname = Ice Mountain
@@ -187,7 +187,7 @@ Music = MP_ICE
 TypeOfLevel = ZESCAPE
 NextLevel = R0
 NoZone = True
-SelectHeading = Zombie Escape
+SelectHeading = Zombie Escape Maps
 
 Level 70
 Levelname = Old River XMAS
@@ -200,8 +200,7 @@ SkyNum = 17
 Palette = 5
 weather = 2
 NoZone = True
-SelectHeading = Zombie Escape
-Lua.SwarmMap = true
+SelectHeading = Zombie Swarm Maps
 Lua.SurviveTime = 4
 
 Level 71
@@ -215,8 +214,7 @@ SkyNum = 17
 Palette = 5
 weather = 2
 NoZone = True
-SelectHeading = Zombie Escape
-Lua.SwarmMap = true
+SelectHeading = Zombie Swarm Maps
 Lua.SurviveTime = 4
 
 Level 72
@@ -229,8 +227,7 @@ NextLevel = 70
 SkyNum = 21
 weather = 2
 NoZone = True
-SelectHeading = Zombie Escape
-Lua.SwarmMap = true
+SelectHeading = Zombie Swarm Maps
 Lua.SurviveTime = 4
 
 Level 18
@@ -241,9 +238,9 @@ TypeOfLevel = ZESCAPE
 NoZone = True
 Weather = 0
 SkyNum = 5
-Lua.SwarmMap = true
 Lua.SurviveTime = 5
 Lua.BounceOff = true
+SelectHeading = Zombie Swarm Maps
 
 Level S0
 LevelName = City Escape
@@ -255,7 +252,7 @@ NextLevel = 40
 SkyNum = 11
 Weather = 1
 NoZone = true
-SelectHeading = Zombie Escape
+SelectHeading = Zombie Escape Maps
 
 Level N0
 Levelname = Ancient Catacombs
@@ -266,7 +263,7 @@ TypeOfLevel = ZESCAPE
 NextLevel = 41
 SkyNum = 1
 NoZone = True
-SelectHeading = Zombie Escape
+SelectHeading = Zombie Escape Maps
 
 Level Z2
 Levelname = Egg Rock
@@ -277,7 +274,7 @@ NextLevel = 40
 SkyNum = 22
 LevelSelect = 1
 NoZone = True
-SelectHeading = Zombie Escape
+SelectHeading = Zombie Escape Maps
 SubTitle = Zombie Escape
 Lua.SurviveTime = 12
 
@@ -285,34 +282,43 @@ Level E0
 LevelName = Jade Valley
 Music = MP_SUN
 TypeOfLevel = ZESCAPE
-SelectHeading = Lazy Match Ports
+SelectHeading = Zombie Swarm Maps
 NextLevel = E1
 SkyNum = 1
 SubTitle = Zombie Swarm
 LevelSelect = 1
-Lua.SwarmMap = true
 Lua.SurviveTime = 4
 
 Level E1
 LevelName = Desolate Twilight
 Music = MP_DES
 TypeOfLevel = ZESCAPE
-SelectHeading = Lazy Match Ports
+SelectHeading = Zombie Swarm Maps
 NextLevel = E5
 SkyNum = 21
 SubTitle = Zombie Swarm
 LevelSelect = 1
-Lua.SwarmMap = true
 Lua.SurviveTime = 4
 
 Level E2
 LevelName = Meadow Match
 Music = MP_MED
 TypeOfLevel = ZESCAPE
-SelectHeading = Lazy Match Ports
+SelectHeading = Zombie Swarm Maps
 NextLevel = E0
 SkyNum = 2
 SubTitle = Zombie Swarm
 LevelSelect = 1
-Lua.SwarmMap = true
 Lua.SurviveTime = 4
+
+Level TZ
+Levelname = Iridescent Abyss
+Act = 0
+Music = BHZ
+TypeOfLevel = ZESCAPE
+SelectHeading = Zombie Swarm Maps
+NextLevel = 41
+SkyNum = 99
+Subtitle = ZS level by Soouguy
+Lua.SurviveTime = 4
+
