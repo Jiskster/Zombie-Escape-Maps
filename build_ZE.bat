@@ -2,7 +2,7 @@
 
 ::--------------------------------------------------------------------------
 set "name=ZML_MZombieEscape_Maps"
-set "version=2.1b"
+set "version=2.1c"
 
 set /A "delump=0"
 
