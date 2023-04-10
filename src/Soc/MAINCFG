@@ -201,7 +201,7 @@ Palette = 5
 weather = 2
 NoZone = True
 SelectHeading = Zombie Swarm Maps
-Lua.SurviveTime = 4
+Lua.SurviveTime = 5
 Lua.ZombieSwarm = true
 
 Level 71
@@ -216,7 +216,7 @@ Palette = 5
 weather = 2
 NoZone = True
 SelectHeading = Zombie Swarm Maps
-Lua.SurviveTime = 4
+Lua.SurviveTime = 5
 Lua.ZombieSwarm = true
 
 
@@ -231,7 +231,7 @@ SkyNum = 21
 weather = 2
 NoZone = True
 SelectHeading = Zombie Swarm Maps
-Lua.SurviveTime = 4
+Lua.SurviveTime = 5
 Lua.ZombieSwarm = true
 
 Level 18
@@ -293,7 +293,7 @@ NextLevel = E1
 SkyNum = 1
 SubTitle = Zombie Swarm
 LevelSelect = 1
-Lua.SurviveTime = 4
+Lua.SurviveTime = 5
 Lua.ZombieSwarm = true
 
 
@@ -306,7 +306,7 @@ NextLevel = E5
 SkyNum = 21
 SubTitle = Zombie Swarm
 LevelSelect = 1
-Lua.SurviveTime = 4
+Lua.SurviveTime = 5
 Lua.ZombieSwarm = true
 
 
@@ -319,7 +319,7 @@ NextLevel = E0
 SkyNum = 2
 SubTitle = Zombie Swarm
 LevelSelect = 1
-Lua.SurviveTime = 4
+Lua.SurviveTime = 5
 Lua.ZombieSwarm = true
 
 
@@ -332,7 +332,7 @@ SelectHeading = Zombie Swarm Maps
 NextLevel = 41
 SkyNum = 99
 Subtitle = ZS level by Soouguy
-Lua.SurviveTime = 4
+Lua.SurviveTime = 5
 Lua.ZombieSwarm = true
 
 
