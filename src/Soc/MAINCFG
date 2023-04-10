@@ -202,6 +202,7 @@ weather = 2
 NoZone = True
 SelectHeading = Zombie Swarm Maps
 Lua.SurviveTime = 4
+Lua.ZombieSwarm = true
 
 Level 71
 Levelname = Forest XMAS
@@ -216,6 +217,8 @@ weather = 2
 NoZone = True
 SelectHeading = Zombie Swarm Maps
 Lua.SurviveTime = 4
+Lua.ZombieSwarm = true
+
 
 Level 72
 Levelname = Highrise 2021
@@ -229,6 +232,7 @@ weather = 2
 NoZone = True
 SelectHeading = Zombie Swarm Maps
 Lua.SurviveTime = 4
+Lua.ZombieSwarm = true
 
 Level 18
 Levelname = Train Station 17
@@ -241,6 +245,8 @@ SkyNum = 5
 Lua.SurviveTime = 5
 Lua.BounceOff = true
 SelectHeading = Zombie Swarm Maps
+Lua.ZombieSwarm = true
+
 
 Level S0
 LevelName = City Escape
@@ -288,6 +294,8 @@ SkyNum = 1
 SubTitle = Zombie Swarm
 LevelSelect = 1
 Lua.SurviveTime = 4
+Lua.ZombieSwarm = true
+
 
 Level E1
 LevelName = Desolate Twilight
@@ -299,6 +307,8 @@ SkyNum = 21
 SubTitle = Zombie Swarm
 LevelSelect = 1
 Lua.SurviveTime = 4
+Lua.ZombieSwarm = true
+
 
 Level E2
 LevelName = Meadow Match
@@ -310,6 +320,8 @@ SkyNum = 2
 SubTitle = Zombie Swarm
 LevelSelect = 1
 Lua.SurviveTime = 4
+Lua.ZombieSwarm = true
+
 
 Level TZ
 Levelname = Iridescent Abyss
@@ -321,6 +333,8 @@ NextLevel = 41
 SkyNum = 99
 Subtitle = ZS level by Soouguy
 Lua.SurviveTime = 4
+Lua.ZombieSwarm = true
+
 
 
 
