@@ -1,8 +1,8 @@
 @ECHO OFF
 
 ::--------------------------------------------------------------------------
-set "name=ZML_ZombieEscape_MapPack1"
-set "version=v1_beta1"
+set "name=ZML_MP1"
+set "version=1"
 
 set /A "delump=0"
 
