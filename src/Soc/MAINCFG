@@ -345,6 +345,7 @@ NextLevel = N3
 SkyNum = 53
 NoZone = True
 SelectHeading = Zombie Escape Maps
+Lua.BounceOff = true
 
 
 
