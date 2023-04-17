@@ -335,6 +335,16 @@ Subtitle = ZS level by Soouguy
 Lua.SurviveTime = 5
 Lua.ZombieSwarm = true
 
+Level N2
+Levelname = Roblox Obby 2
+Subtitle = ZE Map By Neonius|Next
+Act = 0
+Music = RBXO
+TypeOfLevel = ZESCAPE
+NextLevel = N3
+SkyNum = 53
+NoZone = True
+SelectHeading = Zombie Escape Maps
 
 
 
