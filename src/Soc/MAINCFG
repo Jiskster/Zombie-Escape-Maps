@@ -356,3 +356,5 @@ SkyNum = 29
 Music = SPEC3
 NoZone = true
 SelectHeading = Zombie Swarm Maps
+Lua.SurviveTime = 5
+Lua.ZombieSwarm = true
