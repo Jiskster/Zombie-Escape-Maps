@@ -347,5 +347,12 @@ NoZone = True
 SelectHeading = Zombie Escape Maps
 Lua.BounceOff = true
 
-
-
+Level HT
+Levelname = Houser Town
+SubTitle = Town in a middle of nowhere
+TypeOfLevel = ZESCAPE
+NextLevel = 40
+SkyNum = 29
+Music = SPEC3
+NoZone = true
+SelectHeading = Zombie Swarm Maps
