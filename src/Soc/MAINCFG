@@ -358,3 +358,15 @@ NoZone = true
 SelectHeading = Zombie Swarm Maps
 Lua.SurviveTime = 5
 Lua.ZombieSwarm = true
+
+Level S1
+Levelname = Green Turnaround
+SubTitle = I guess its green.
+TypeOfLevel = ZESCAPE
+NextLevel = 40
+SkyNum = 4
+Music = RVZB
+NoZone = true
+SelectHeading = Zombie Swarm Maps
+Lua.SurviveTime = 5
+Lua.ZombieSwarm = true
