@@ -5,6 +5,7 @@ Act = 0
 Music = EGZEM
 TypeOfLevel = ZESCAPE
 NextLevel = 41
+Palette = 24
 SkyNum = 15
 NoZone = True
 SelectHeading = Zombie Escape Maps
