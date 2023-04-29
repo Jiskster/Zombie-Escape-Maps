@@ -120,3 +120,16 @@ NoZone = true
 SelectHeading = Zombie Swarm Maps
 Lua.SurviveTime = 5
 Lua.ZombieSwarm = true
+
+Level N3
+Levelname = Summer Forest
+Act = 0
+Music = MP_MED
+TypeOfLevel = ZESCAPE
+SelectHeading = Zombie Swarm Maps
+NextLevel = N4
+SkyNum = 40
+NoZone = true
+Subtitle = ZS Map By Neonius|Next
+Lua.SurviveTime = 5
+Lua.ZombieSwarm = true
