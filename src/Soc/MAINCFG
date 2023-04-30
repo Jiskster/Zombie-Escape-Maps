@@ -133,3 +133,16 @@ NoZone = true
 Subtitle = ZS Map By Neonius|Next
 Lua.SurviveTime = 5
 Lua.ZombieSwarm = true
+
+Level CC
+LevelName = Puffy Heights
+Act = 0
+Subtitle = Opengl highly recommended
+Music = FUNNYC
+TypeOfLevel = ZESCAPE
+NextLevel = 41
+SelectHeading = Zombie Swarm Maps
+NoZone = True
+SkyNum = 127
+Lua.SurviveTime = 5
+Lua.ZombieSwarm = true
