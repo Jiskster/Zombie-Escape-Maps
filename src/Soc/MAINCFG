@@ -96,6 +96,7 @@ SkyNum = 53
 NoZone = True
 SelectHeading = Zombie Escape Maps
 Lua.BounceOff = true
+Lua.PlayerCountName = ROBLOXIANS
 
 Level HT
 Levelname = Houser Town
