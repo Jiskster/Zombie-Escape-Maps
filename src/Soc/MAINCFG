@@ -147,3 +147,15 @@ NoZone = True
 SkyNum = 127
 Lua.SurviveTime = 5
 Lua.ZombieSwarm = true
+
+Level T3
+LevelName = Memory of Wrath
+SubTitle = The greatest conflict in ^AArcaea
+NoZone = true
+Music = TEMP
+TypeOfLevel = ZESCAPE
+SelectHeading = Zombie Swarm Maps
+NextLevel = TZ
+SkyNum = 7359
+Lua.SurviveTime = 5
+Lua.ZombieSwarm = true
