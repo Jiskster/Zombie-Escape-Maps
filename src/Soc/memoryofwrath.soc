@@ -1,0 +1,21 @@
+Freeslot
+MT_TAIRITSU
+S_TAIRITSU
+SPR_TAIR
+
+State S_TAIRITSU
+next = S_TAIRITSU
+SpriteName = SPR_TAIR
+SpriteFrame = A
+Duration = 2
+
+Object MT_TAIRITSU
+#$Name Tairitsu Prop
+#$Sprite TAIRA0
+MapThingNum = 1698
+SpawnState = S_TAIRITSU
+deathstate = S_TAIRITSU
+spawnhealth = 1
+radius = 360*FRACUNIT
+height = 360*FRACUNIT
+flags = MF_NOCLIPTHING|MF_NOGRAVITY
