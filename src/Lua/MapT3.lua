@@ -3,8 +3,8 @@
 
 -- i dont get this below 5/21/23 Jisk
 local function realtime()
-	COM_BufInsertText(server, "ze_wait 10")
-	COM_BufInsertText(server, "ze_survtime 256")
+	--COM_BufInsertText(server, "ze_wait 10")
+	--COM_BufInsertText(server, "ze_survtime 256")
 end
 
 addHook("LinedefExecute", realtime, "RSTIME")
